@@ -1,18 +1,5 @@
 # Overview: Time Tracking App
 
-## Description
-
-In order to review, practice, and demonstrate your Rails knowledge, build a Rails application of moderate complexity from the ground up by yourself.
-
-## Objectives
-
-After completing this assignment, you should...
-
-* Understand any gaps in your knowledge which you hope to fill over the coming weeks.
-* Understand which parts of Rails development are more likely to put you in a flow state.
-* Have built a Rails application from scratch and deployed it to Heroku in a working state.
-* Have used best practices such as test-driven development and committing/deploying early and often.
-
 ## Deliverables
 
 * **A Data Structure Diagram.**
@@ -24,9 +11,10 @@ After completing this assignment, you should...
 
 ## Overview Mode
 
-For this assignment, you are going to build a standard time tracking application.  The purpose of this work is to review the core components of a Rails application and demonstrate your ability to put them together appropriately.  In order to help you and your instructor reflect on your acquired skills, you will be working independently.  You may talk with others and draw on whiteboards together, but no other students should look at your actual code, and you should not look at theirs.  You may, of course, use Google and online references as frequently as you would like.
-
-You are building an application to track of developer time.  This application will keep track of all projects within your organization, all developers within your organization, and all time put towards projects by each developer.  Time entries must have a duration, a project, a developer, and a date.  Projects must have a maximum number of allowed hours.  Developers must have unique email addresses.
+You are building an application to track of developer time.  This application will keep track of all projects within your organization, all developers within your organization, and all time put towards projects by each developer.  
+Time entries must have a duration, a project, a developer, and a date.  
+Projects must have a maximum number of allowed hours.  
+Developers must have unique email addresses.
 
 Your application should allow the following:
 
