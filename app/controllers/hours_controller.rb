@@ -14,6 +14,10 @@ class HoursController < ApplicationController
   def show
   end
 
-  def updatedestroy
+  def update
   end
+
+  def destroy
+  end
+
 end
