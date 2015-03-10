@@ -36,10 +36,10 @@ Your application should allow the following:
 
 In terms of code:
 
-- You should not use scaffold or Devise.
-- Passwords should not be stored in the database in plain text.
++ You should not use scaffold or Devise.
++ Passwords should not be stored in the database in plain text.
 - Foreign keys should have indices.
-- You should have at least one developer and one project in your seed data.
++ You should have at least one developer and one project in your seed data.
 - Your application UI should look polished and clean, not unfinished like views generated from scaffold do.
 - You may use whatever web design framework you like (e.g. Bootstrap, Foundation, Bourbon/Neat/etc), but it is not required.
 

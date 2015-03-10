@@ -1,0 +1,5 @@
+<%= form_for @project do |f| %>
+  <%= f.text_field :project_name, placeholder: "Project Name" %><br>
+  <%= f.number_field :max_hours, placeholder: "Max Hours" %><br>
+  <%= f.submit "Submit"%>
+<% end %>

@@ -3,7 +3,7 @@ class DevelopersController < ApplicationController
 
 
   def new
-    dev = Developer.new
+    @developer = Developer.new
   end
 
   def index
