@@ -1,0 +1,5 @@
+<%= form_for @hour do |f| %>
+  <%= f.date_field :worked_on, placeholder: "Date" %><br>
+  <%= f.number_field :duration, placeholder: "How long did you work on this project" %><br>
+  <%= f.submit "Submit"%>
+<% end %>
