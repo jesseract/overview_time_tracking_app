@@ -26,8 +26,8 @@ class HoursControllerTest < ActionController::TestCase
     assert_response :success
   end
 
-  test "should get updatedestroy" do
-    get :updatedestroy
+  test "should get update" do
+    get :update
     assert_response :success
   end
 
