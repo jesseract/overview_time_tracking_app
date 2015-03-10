@@ -1,9 +1,13 @@
 class DevelopersController < ApplicationController
+  before_action :set_developer, only: [:show, :edit, :update, :destroy]
+
+
   def new
     dev = Developer.new
   end
 
   def index
+    @developers = Developer.all
   end
 
   def edit
@@ -30,18 +34,17 @@ class DevelopersController < ApplicationController
   end
 
   def destroy
+    @developer.destroy
+    redirect_to developers_url, notice: 'Developer was successfully destroyed.'
   end
 
-  private
-
-    def set_developer
+  private def set_developer
       @developer = Developer.find(params[:id])
     end
+
     def developer_params
       params.require(:developer).permit(:email, :password)
     end
 
-
-end
 
 end
