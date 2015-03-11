@@ -8,6 +8,7 @@ class DevelopersController < ApplicationController
 
   def index
     @developers = Developer.all
+    @all_developers = Developer.all
   end
 
   def edit

@@ -4,6 +4,7 @@ class ProjectsController < ApplicationController
 
     def new
       @project = Project.new
+      @all_projects = Project.all
     end
 
     def index

@@ -4,6 +4,8 @@ class HoursController < ApplicationController
 
     def new
       @hour = Hour.new
+      @all_projects = Project.all
+      @all_developers = Developer.all
     end
 
     def index

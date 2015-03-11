@@ -1,5 +1,8 @@
 <%= form_for @hour do |f| %>
   <%= f.date_field :worked_on, placeholder: "Date" %><br>
-  <%= f.number_field :duration, placeholder: "How long did you work on this project" %><br>
+  <%= f.number_field :duration, placeholder: "Daily hours" %><br>
+  <%= f.collection_select(:project_id, @all_projects, :id, :project_name, {:prompt => 'Please select your project'}) %><br>
+  <%= f.collection_select(:developer_id, @all_developers, :id, :email, {:prompt => 'Please select your name'}) %><br>
+  </div>
   <%= f.submit "Submit"%>
 <% end %>
