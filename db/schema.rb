@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150309182000) do
+ActiveRecord::Schema.define(version: 20150311024509) do
 
   create_table "developers", force: :cascade do |t|
     t.string   "email"
@@ -24,9 +24,9 @@ ActiveRecord::Schema.define(version: 20150309182000) do
     t.integer  "project_id"
     t.integer  "developer_id"
     t.date     "worked_on"
-    t.decimal  "duration"
-    t.datetime "created_at",   null: false
-    t.datetime "updated_at",   null: false
+    t.decimal  "duration",     precision: 10, scale: 2
+    t.datetime "created_at",                            null: false
+    t.datetime "updated_at",                            null: false
   end
 
   create_table "projects", force: :cascade do |t|

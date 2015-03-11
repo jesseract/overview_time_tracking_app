@@ -13,6 +13,8 @@ class HoursController < ApplicationController
     end
 
     def edit
+      @all_projects = Project.all
+      @all_developers = Developer.all
     end
 
     def create
@@ -45,7 +47,7 @@ class HoursController < ApplicationController
       end
 
       def hour_params
-        params.require(:hour).permit(:worked_on, :duration)
+        params.require(:hour).permit(:developer_id, :project_id, :worked_on, :duration)
       end
 
 
