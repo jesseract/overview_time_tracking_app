@@ -1,4 +1,5 @@
 class HoursController < ApplicationController
+  before_action :authenticate_user
   before_action :set_hours, only: [:show, :edit, :update, :destroy]
 
 
