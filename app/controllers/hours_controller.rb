@@ -18,7 +18,7 @@ class HoursController < ApplicationController
     def create
       @hour = Hour.new(hour_params)
       if @hour.save
-        redirect_to hours_path, notice: "Hour was successfully created"
+        redirect_to hours_path, notice: "Hours were successfully created"
       else
         render 'new', notice: "Try again"
       end
@@ -29,7 +29,7 @@ class HoursController < ApplicationController
 
     def update
       if @hour.update(hour_params)
-        redirect_to hours_path, notice: 'Hour was successfully updated.'
+        redirect_to hours_path, notice: 'Hours were successfully updated.'
       else
         render :edit
       end
@@ -37,10 +37,10 @@ class HoursController < ApplicationController
 
     def destroy
       @hour.destroy
-      redirect_to hours_url, notice: 'Hour was successfully destroyed.'
+      redirect_to hours_url, notice: 'Hours were successfully destroyed.'
     end
 
-    private def set_developer
+    private def set_hours
         @hour = Hour.find(params[:id])
       end
 
