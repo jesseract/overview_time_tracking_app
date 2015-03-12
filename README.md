@@ -19,11 +19,11 @@ You are building an application to track of developer time.  This application wi
 
 Your application should allow the following:
 
-- People who access any page without logging in are redirected to the login page.
-- Developers can log in.
-- Developers who have already logged in are not taken back to the login page when they go to the application's root URL.
-- Developers can create/edit/delete other developers.
-- Developers can create/edit/delete projects.
++ People who access any page without logging in are redirected to the login page.
++ Developers can log in.
++ Developers who have already logged in are not taken back to the login page when they go to the application's root URL.
++ Developers can create/edit/delete other developers.
++ Developers can create/edit/delete projects.
 - Developers can create/edit/delete time entries for themselves, not for other developers.
 - No one can delete a developer once that developer has made a time entry.
 - No one can delete a project once that project has a time entry on it.
@@ -32,7 +32,7 @@ Your application should allow the following:
   - Shows the project in red if the number of hours on the project exceeds the number of hours allowed.
 - There must be a developer list page which:
   - Shows the developer in red if he or she has worked more than 40 hours in the current calendar week.
-- Developers can log out from any page.
++ Developers can log out from any page.
 
 In terms of code:
 

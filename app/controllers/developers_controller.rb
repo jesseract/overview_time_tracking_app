@@ -40,6 +40,7 @@ class DevelopersController < ApplicationController
     redirect_to developers_url, notice: 'Developer was successfully destroyed.'
   end
 
+
   private def set_developer
       @developer = Developer.find(params[:id])
     end
